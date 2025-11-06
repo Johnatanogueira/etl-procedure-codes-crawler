@@ -42,3 +42,15 @@ Feed 3 tables:
 ``` bash
 docker run --rm -it --env-file ./src/procedure_code.env -v ~/.aws/credentials:/root/.aws/credentials -v ./:/app lifemed-crawler python src/procedure_code.py
 ```
+## Airflow Integration
+
+Although this project is fully functional as a standalone crawler (via Docker commands),  
+it was also designed to be orchestrated through **Apache Airflow** for automation, scheduling, and monitoring.
+
+### Workflow Overview
+
+```text
++----------+     +-----------+     +---------+     +----------+
+|  AAPC    | --> |  Crawler  | --> |   S3    | --> |  Athena  |
++----------+     +-----------+     +---------+     +----------+
+         (Triggered and monitored by Apache Airflow)
