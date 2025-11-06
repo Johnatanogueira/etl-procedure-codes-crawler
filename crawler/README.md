@@ -5,6 +5,10 @@ The Docker image is built based on a Dockerfile, allowing automated and isolated
 
 This image includes all necessary dependencies such as headless Chrome, Selenium, pandas, BeautifulSoup, and AWS integration.
 
+## Note on SQL Queries
+
+The original SQL queries used in this project have been removed for confidentiality reasons, as they contain business-specific logic and database structures from a private environment.
+This repository focuses on showcasing the crawler implementation, data processing logic, and integration flow (Athena, S3, Airflow, etc.) while keeping proprietary information secure.
 
 ## Docker Image Build
 ``` bash
