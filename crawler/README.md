@@ -19,8 +19,3 @@ AWS SDK integration (boto3) for communication with S3 and Athena
 The original SQL queries used in this project have been removed for confidentiality and compliance reasons, as they contain internal business logic and database structures specific to a private environment.
 
 This repository focuses on demonstrating the crawler architecture, data processing logic, and integration flow (Athena, S3, Airflow, etc.) while ensuring proprietary information remains protected.
-
-+-----------+     +---------+     +----------+
- |  Crawler  | --> |   S3    | --> |  Athena  |
-+-----------+     +---------+     +----------+
-         (Triggered and monitored by Apache Airflow)
